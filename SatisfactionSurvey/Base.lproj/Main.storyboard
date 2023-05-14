@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad12_9" orientation="landscape" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SatisfactionSurvey" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="satisfaction" translatesAutoresizingMaskIntoConstraints="NO" id="zJQ-Sj-L93">
+                                <rect key="frame" x="705" y="-3" width="809" height="1049"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="47" translatesAutoresizingMaskIntoConstraints="NO" id="M44-Rg-RLj">
+                                <rect key="frame" x="45" y="160" width="804" height="410.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="WPt-jX-JlH">
+                                        <rect key="frame" x="0.0" y="0.0" width="699" height="77"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QUANTO SEI SODDISFATTO DEL NOSTRO SERVIZIO?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Yd-ed-fuf">
+                                                <rect key="frame" x="0.0" y="0.0" width="699" height="38.5"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="28"/>
+                                                <color key="textColor" red="0.43921568989999998" green="0.43921568989999998" blue="0.43921568989999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SELEZIONA UN NUMERO DA 1 A 10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="euS-9o-nKL">
+                                                <rect key="frame" x="0.0" y="49.5" width="336" height="27.5"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
+                                                <color key="textColor" red="0.43921568989999998" green="0.43921568989999998" blue="0.43921568989999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="37" translatesAutoresizingMaskIntoConstraints="NO" id="nap-vC-pEN">
+                                        <rect key="frame" x="0.0" y="124" width="804" height="149.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" spacing="704" translatesAutoresizingMaskIntoConstraints="NO" id="lIn-Z0-vQo">
+                                                <rect key="frame" x="0.0" y="0.0" width="804" height="50"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="face-dissatisfied" translatesAutoresizingMaskIntoConstraints="NO" id="1Je-8D-FV0">
+                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="50" id="7Kt-v1-bGi"/>
+                                                            <constraint firstAttribute="height" constant="50" id="efq-rH-KTW"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="face-satisfied" translatesAutoresizingMaskIntoConstraints="NO" id="akc-f7-6RJ">
+                                                        <rect key="frame" x="754" y="0.0" width="50" height="50"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="50" id="KaV-fI-kM5"/>
+                                                            <constraint firstAttribute="height" constant="50" id="sAc-2T-XOY"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <integer key="value" value="25"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </imageView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="firstBaseline" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="1Gn-R1-YLI">
+                                                <rect key="frame" x="0.0" y="87" width="804" height="62.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="P9Q-9b-qh5" customClass="BordButtonNumbers" customModule="SatisfactionSurvey" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="30" height="62.5"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="Button">
+                                                            <attributedString key="attributedTitle">
+                                                                <fragment content="1">
+                                                                    <attributes>
+                                                                        <color key="NSColor" red="0.43921568989999998" green="0.43921568989999998" blue="0.43921568989999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                        <font key="NSFont" size="37" name="AvenirNext-Medium"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="numbers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gip-2Y-ffE"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O1F-QI-S7w" customClass="BordButtonNumbers" customModule="SatisfactionSurvey" customModuleProvider="target">
+                                                        <rect key="frame" x="84.5" y="0.0" width="30" height="62.5"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="Button">
+                                                            <attributedString key="attributedTitle">
+                                                                <fragment content="2">
+                                                                    <attributes>
+                                                                        <color key="NSColor" red="0.43921568989999998" green="0.43921568989999998" blue="0.43921568989999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                        <font key="NSFont" size="37" name="AvenirNext-Medium"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="numbers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nnb-LR-y1I"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J66-Qw-K1y" customClass="BordButtonNumbers" customModule="SatisfactionSurvey" customModuleProvider="target">
+                                                        <rect key="frame" x="168.5" y="0.0" width="30" height="62.5"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="Button">
+                                                            <attributedString key="attributedTitle">
+                                                                <fragment content="3">
+                                                                    <attributes>
+                                                                        <color key="NSColor" red="0.43921568989999998" green="0.43921568989999998" blue="0.43921568989999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                        <font key="NSFont" size="37" name="AvenirNext-Medium"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="numbers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n8w-GH-hBT"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TT3-U5-5O8" customClass="BordButtonNumbers" customModule="SatisfactionSurvey" customModuleProvider="target">
+                                                        <rect key="frame" x="253" y="0.0" width="30" height="62.5"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="Button">
+                                                            <attributedString key="attributedTitle">
+                                                                <fragment content="4">
+                                                                    <attributes>
+                                                                        <color key="NSColor" red="0.43921568989999998" green="0.43921568989999998" blue="0.43921568989999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                        <font key="NSFont" size="37" name="AvenirNext-Medium"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="numbers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gao-2F-v85"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GTz-lf-PnX" customClass="BordButtonNumbers" customModule="SatisfactionSurvey" customModuleProvider="target">
+                                                        <rect key="frame" x="337.5" y="0.0" width="30" height="62.5"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="Button">
+                                                            <attributedString key="attributedTitle">
+                                                                <fragment content="5">
+                                                                    <attributes>
+                                                                        <color key="NSColor" red="0.43921568989999998" green="0.43921568989999998" blue="0.43921568989999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                        <font key="NSFont" size="37" name="AvenirNext-Medium"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="numbers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ape-KB-ttf"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f3m-SZ-xqW" customClass="BordButtonNumbers" customModule="SatisfactionSurvey" customModuleProvider="target">
+                                                        <rect key="frame" x="421.5" y="0.0" width="30" height="62.5"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="Button">
+                                                            <attributedString key="attributedTitle">
+                                                                <fragment content="6">
+                                                                    <attributes>
+                                                                        <color key="NSColor" red="0.43921568989999998" green="0.43921568989999998" blue="0.43921568989999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                        <font key="NSFont" size="37" name="AvenirNext-Medium"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="numbers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="002-2Z-PDP"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xUU-Fn-jsy" customClass="BordButtonNumbers" customModule="SatisfactionSurvey" customModuleProvider="target">
+                                                        <rect key="frame" x="506" y="0.0" width="30" height="62.5"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="Button">
+                                                            <attributedString key="attributedTitle">
+                                                                <fragment content="7">
+                                                                    <attributes>
+                                                                        <color key="NSColor" red="0.43921568989999998" green="0.43921568989999998" blue="0.43921568989999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                        <font key="NSFont" size="37" name="AvenirNext-Medium"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="numbers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="stu-3m-XOX"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lnf-fr-k7P" customClass="BordButtonNumbers" customModule="SatisfactionSurvey" customModuleProvider="target">
+                                                        <rect key="frame" x="590.5" y="0.0" width="30" height="62.5"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="Button">
+                                                            <attributedString key="attributedTitle">
+                                                                <fragment content="8">
+                                                                    <attributes>
+                                                                        <color key="NSColor" red="0.43921568989999998" green="0.43921568989999998" blue="0.43921568989999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                        <font key="NSFont" size="37" name="AvenirNext-Medium"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="numbers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CDx-xf-47J"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="odv-eZ-mtL" customClass="BordButtonNumbers" customModule="SatisfactionSurvey" customModuleProvider="target">
+                                                        <rect key="frame" x="674.5" y="0.0" width="30" height="62.5"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="Button">
+                                                            <attributedString key="attributedTitle">
+                                                                <fragment content="9">
+                                                                    <attributes>
+                                                                        <color key="NSColor" red="0.43921568989999998" green="0.43921568989999998" blue="0.43921568989999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                        <font key="NSFont" size="37" name="AvenirNext-Medium"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="numbers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2MW-aI-QqP"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j6e-MX-Gvb" customClass="BordButtonNumbers" customModule="SatisfactionSurvey" customModuleProvider="target">
+                                                        <rect key="frame" x="759" y="0.0" width="45" height="62.5"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="Button">
+                                                            <attributedString key="attributedTitle">
+                                                                <fragment content="10">
+                                                                    <attributes>
+                                                                        <color key="NSColor" red="0.43921568989999998" green="0.43921568989999998" blue="0.43921568989999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                        <font key="NSFont" size="37" name="AvenirNext-Medium"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="numbers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5RV-Q3-TKc"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="1Gn-R1-YLI" secondAttribute="trailing" id="E5a-r0-Rse"/>
+                                            <constraint firstItem="1Gn-R1-YLI" firstAttribute="leading" secondItem="nap-vC-pEN" secondAttribute="leading" id="ubB-4L-aA7"/>
+                                        </constraints>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R3Z-Bs-CDc">
+                                        <rect key="frame" x="0.0" y="320.5" width="239" height="90"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="conferma"/>
+                                        <connections>
+                                            <action selector="conferma:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A3a-Vu-q07"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ufr-Ep-1q3">
+                                <rect key="frame" x="50" y="35" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="KnI-7T-cFn"/>
+                                    <constraint firstAttribute="height" constant="80" id="L2b-09-jtY"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <imageReference key="image" image="logo" symbolScale="large" renderingMode="hierarchical">
+                                        <hierarchicalColors>
+                                            <color red="0.020141864200000002" green="0.73986393210000001" blue="0.85482996700000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color red="0.30738216639999999" green="0.8760300875" blue="0.76967209579999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color red="0.52868503330000005" green="0.98059850930000003" blue="0.70329731699999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </hierarchicalColors>
+                                    </imageReference>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="default" weight="bold"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="6Om-hN-Z61" kind="presentation" identifier="data" modalPresentationStyle="fullScreen" id="hx5-vA-aK3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="zJQ-Sj-L93" secondAttribute="bottom" constant="-22" id="3Sa-NS-WCq"/>
+                            <constraint firstItem="zJQ-Sj-L93" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="-3" id="8RT-1u-GWh"/>
+                            <constraint firstItem="M44-Rg-RLj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="DLR-Bk-DOi"/>
+                            <constraint firstItem="Ufr-Ep-1q3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="JmM-Ja-LOF"/>
+                            <constraint firstItem="M44-Rg-RLj" firstAttribute="top" secondItem="Ufr-Ep-1q3" secondAttribute="bottom" constant="45" id="lLJ-kY-OuN"/>
+                            <constraint firstItem="Ufr-Ep-1q3" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="35" id="obx-Ej-v01"/>
+                            <constraint firstAttribute="trailing" secondItem="zJQ-Sj-L93" secondAttribute="trailing" constant="-148" id="yU1-TT-bIm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outletCollection property="votiNumbers" destination="f3m-SZ-xqW" collectionClass="NSMutableArray" id="TWp-rW-CZf"/>
+                        <outletCollection property="votiNumbers" destination="j6e-MX-Gvb" collectionClass="NSMutableArray" id="6dv-U2-ej6"/>
+                        <outletCollection property="votiNumbers" destination="odv-eZ-mtL" collectionClass="NSMutableArray" id="vEq-jY-mpr"/>
+                        <outletCollection property="votiNumbers" destination="Lnf-fr-k7P" collectionClass="NSMutableArray" id="FZC-cV-Qrm"/>
+                        <outletCollection property="votiNumbers" destination="xUU-Fn-jsy" collectionClass="NSMutableArray" id="0sT-xa-DKy"/>
+                        <outletCollection property="votiNumbers" destination="GTz-lf-PnX" collectionClass="NSMutableArray" id="tQF-lu-ywU"/>
+                        <outletCollection property="votiNumbers" destination="TT3-U5-5O8" collectionClass="NSMutableArray" id="0e0-nL-5MC"/>
+                        <outletCollection property="votiNumbers" destination="J66-Qw-K1y" collectionClass="NSMutableArray" id="eFO-na-kP4"/>
+                        <outletCollection property="votiNumbers" destination="O1F-QI-S7w" collectionClass="NSMutableArray" id="YFM-IS-a3b"/>
+                        <outletCollection property="votiNumbers" destination="P9Q-9b-qh5" collectionClass="NSMutableArray" id="PfA-ov-e77"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.79941434846265" y="114.84374999999999"/>
+        </scene>
+        <!--Data View Controller-->
+        <scene sceneID="g9e-WG-b7i">
+            <objects>
+                <viewController id="6Om-hN-Z61" customClass="DataViewController" customModule="SatisfactionSurvey" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="og1-yc-q2k">
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="satisfaction" translatesAutoresizingMaskIntoConstraints="NO" id="b5g-Gv-Iv1">
+                                <rect key="frame" x="760" y="7" width="809" height="1054"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="pRL-T9-k5f">
+                                <rect key="frame" x="30" y="79" width="730" height="945"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="2H0-Bs-J10" customClass="DataTableViewCell" customModule="SatisfactionSurvey" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="730" height="66.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2H0-Bs-J10" id="hax-VH-vkz">
+                                            <rect key="frame" x="0.0" y="0.0" width="730" height="66.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Yvh-OQ-DNJ">
+                                                    <rect key="frame" x="20" y="20" width="690" height="26.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Voto: 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0s3-ZV-Vox">
+                                                            <rect key="frame" x="0.0" y="0.0" width="330" height="26.5"/>
+                                                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Voto: 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hBl-lq-2hj">
+                                                            <rect key="frame" x="360" y="0.0" width="330" height="26.5"/>
+                                                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Yvh-OQ-DNJ" firstAttribute="leading" secondItem="hax-VH-vkz" secondAttribute="leading" constant="20" id="DTZ-q9-EXs"/>
+                                                <constraint firstItem="Yvh-OQ-DNJ" firstAttribute="top" secondItem="hax-VH-vkz" secondAttribute="top" constant="20" id="HNT-HQ-4T0"/>
+                                                <constraint firstAttribute="trailing" secondItem="Yvh-OQ-DNJ" secondAttribute="trailing" constant="20" id="MKl-dC-U5P"/>
+                                                <constraint firstAttribute="bottom" secondItem="Yvh-OQ-DNJ" secondAttribute="bottom" constant="20" id="eXF-3O-G5Z"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="posizioneVoto" destination="0s3-ZV-Vox" id="ggp-Fj-dWv"/>
+                                            <outlet property="votoNumero" destination="hBl-lq-2hj" id="t7I-33-gKe"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="6Om-hN-Z61" id="UUP-WK-Tdz"/>
+                                    <outlet property="delegate" destination="6Om-hN-Z61" id="Kpr-f4-4Mo"/>
+                                </connections>
+                            </tableView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="66" translatesAutoresizingMaskIntoConstraints="NO" id="P80-qa-WYz">
+                                <rect key="frame" x="30" y="30" width="169" height="34"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="htd-e3-ExV">
+                                        <rect key="frame" x="0.0" y="0.0" width="51.5" height="34"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <imageReference key="image" image="arrowshape.turn.up.backward.circle.fill" catalog="system" symbolScale="large"/>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="large"/>
+                                            <attributedString key="attributedTitle"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="backBtn:" destination="6Om-hN-Z61" eventType="touchUpInside" id="zyo-tO-gok"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IKX-wU-cew">
+                                        <rect key="frame" x="117.5" y="0.0" width="51.5" height="34"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="delete.left.fill" catalog="system">
+                                            <attributedString key="attributedTitle"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="deleteBtn:" destination="6Om-hN-Z61" eventType="touchUpInside" id="vOh-Bj-OMP"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p4x-1q-1Mq">
+                                        <rect key="frame" x="169" y="0.0" width="0.0" height="34"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="square.and.arrow.up.fill" catalog="system">
+                                            <attributedString key="attributedTitle"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="shareBtn:" destination="6Om-hN-Z61" eventType="touchUpInside" id="DF4-gf-Y8Q"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="S07-95-DGC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="pRL-T9-k5f" firstAttribute="top" secondItem="P80-qa-WYz" secondAttribute="bottom" constant="15" id="3Up-Pm-bcx"/>
+                            <constraint firstItem="P80-qa-WYz" firstAttribute="leading" secondItem="S07-95-DGC" secondAttribute="leading" constant="30" id="75S-Ha-l5j"/>
+                            <constraint firstAttribute="trailing" secondItem="b5g-Gv-Iv1" secondAttribute="trailing" constant="-203" id="8bu-n2-vL3"/>
+                            <constraint firstItem="P80-qa-WYz" firstAttribute="top" secondItem="S07-95-DGC" secondAttribute="top" constant="30" id="Jhu-nj-wzd"/>
+                            <constraint firstItem="b5g-Gv-Iv1" firstAttribute="top" secondItem="S07-95-DGC" secondAttribute="top" constant="7" id="SSf-xt-Znz"/>
+                            <constraint firstAttribute="bottom" secondItem="pRL-T9-k5f" secondAttribute="bottom" id="eSY-RO-a1R"/>
+                            <constraint firstAttribute="bottom" secondItem="b5g-Gv-Iv1" secondAttribute="bottom" constant="-37" id="eqG-oH-rfM"/>
+                            <constraint firstItem="b5g-Gv-Iv1" firstAttribute="leading" secondItem="pRL-T9-k5f" secondAttribute="trailing" id="sl1-Ft-xsp"/>
+                            <constraint firstItem="pRL-T9-k5f" firstAttribute="leading" secondItem="og1-yc-q2k" secondAttribute="leading" constant="30" id="wTU-Pe-Zls"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Y5D-4Y-TNL"/>
+                    <connections>
+                        <outlet property="dataTable" destination="pRL-T9-k5f" id="uX2-ve-i2R"/>
+                        <outlet property="shareBt" destination="p4x-1q-1Mq" id="JfB-TX-TGA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ys7-2G-zzP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1028.696925329429" y="107.8125"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="GTz-lf-PnX">
+            <size key="intrinsicContentSize" width="30" height="62.5"/>
+        </designable>
+        <designable name="J66-Qw-K1y">
+            <size key="intrinsicContentSize" width="30" height="62.5"/>
+        </designable>
+        <designable name="Lnf-fr-k7P">
+            <size key="intrinsicContentSize" width="30" height="62.5"/>
+        </designable>
+        <designable name="O1F-QI-S7w">
+            <size key="intrinsicContentSize" width="30" height="62.5"/>
+        </designable>
+        <designable name="P9Q-9b-qh5">
+            <size key="intrinsicContentSize" width="30" height="62.5"/>
+        </designable>
+        <designable name="TT3-U5-5O8">
+            <size key="intrinsicContentSize" width="30" height="62.5"/>
+        </designable>
+        <designable name="f3m-SZ-xqW">
+            <size key="intrinsicContentSize" width="30" height="62.5"/>
+        </designable>
+        <designable name="j6e-MX-Gvb">
+            <size key="intrinsicContentSize" width="45" height="62.5"/>
+        </designable>
+        <designable name="odv-eZ-mtL">
+            <size key="intrinsicContentSize" width="30" height="62.5"/>
+        </designable>
+        <designable name="xUU-Fn-jsy">
+            <size key="intrinsicContentSize" width="30" height="62.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="arrowshape.turn.up.backward.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="conferma" width="215" height="76"/>
+        <image name="delete.left.fill" catalog="system" width="128" height="102"/>
+        <image name="face-dissatisfied" width="50" height="50"/>
+        <image name="face-satisfied" width="50" height="50"/>
+        <image name="logo" width="70" height="70"/>
+        <image name="satisfaction" width="809" height="1026"/>
+        <image name="square.and.arrow.up.fill" catalog="system" width="115" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
