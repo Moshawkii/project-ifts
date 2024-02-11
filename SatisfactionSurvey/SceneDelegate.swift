@@ -2,7 +2,6 @@
 //  SceneDelegate.swift
 //  SatisfactionSurvey
 //
-//  Created by Belinda Tagariello on 21/09/22.
 //
 
 import UIKit
