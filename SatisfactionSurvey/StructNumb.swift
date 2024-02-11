@@ -2,8 +2,6 @@
 //  StructNumb.swift
 //  SatisfactionSurvey
 //
-//  Created by Belinda Tagariello on 23/09/22.
-//
 
 import Foundation
 import UIKit
