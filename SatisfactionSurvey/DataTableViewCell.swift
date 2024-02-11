@@ -2,8 +2,6 @@
 //  DataTableViewCell.swift
 //  SatisfactionSurvey
 //
-//  Created by Belinda Tagariello on 06/10/22.
-//
 
 import UIKit
 
